@@ -1,0 +1,298 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+body {
+  padding: 0;
+  margin: 0;
+}
+.primary-01 {
+  color: rgba(73, 222, 255, 1);
+}
+.primary-02 {
+  color: rgba(79, 253, 239, 1);
+}
+.primary-03 {
+  color: rgba(48, 48, 48, 1);
+}
+.secondary-01 {
+  color: rgba(78, 78, 78, 1);
+}
+.secondary-02 {
+  color: rgba(222, 222, 222, 1);
+}
+.secondary-03 {
+  color: rgba(244, 244, 244, 1);
+}
+.secondary-04 {
+  color: rgba(249, 249, 249, 1);
+}
+.list-color {
+  color: rgba(47, 207, 63, 1);
+}
+.white {
+  color: rgba(255, 255, 255, 1);
+}
+.headingTitle-01 {
+  font-family: "Jost", sans-serif;
+  font-weight: 700;
+  /* font-size: 45px; */
+  line-height: 133%;
+}
+.headingTitle-02 {
+  font-family: "Jost", sans-serif;
+  font-weight: 600;
+  /* font-size: 30px; */
+  line-height: 133%;
+}
+.headingTitle-03 {
+  font-family: "Jost", sans-serif;
+  font-size: 26px;
+  line-height: 100%;
+  font-weight: 500;
+}
+.headingTitle-04 {
+  font-family: "Jost", sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 130%;
+}
+.headingTitle-05 {
+  font-family: "Jost", sans-serif;
+  font-weight: 500;
+  /* font-size: 20px; */
+  line-height: 130%;
+}
+.headingTitle-06 {
+  font-family: "Jost", sans-serif;
+  font-weight: 500;
+  /* font-size: 15px; */
+  line-height: 160%;
+}
+.headingTitle-07 {
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 130%;
+  line-height: 160%;
+}
+.buttonTitle {
+  font-family: "Jost", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 130%;
+  line-height: 160%;
+}
+.button {
+  border-radius: 5px;
+  background-color: rgba(48, 48, 48, 1);
+  /* padding: 12px 38px; */
+  color: rgba(255, 255, 255, 1);
+  cursor: pointer;
+}
+.button:hover {
+  background-color: rgb(58, 57, 57);
+}
+.button-login {
+  border-radius: 5px;
+  background-color: rgba(48, 48, 48, 1);
+  padding: 12px 30px;
+  color: rgba(255, 255, 255, 1);
+  cursor: pointer;
+}
+.button-login:hover {
+  background-color: rgb(58, 57, 57);
+}
+.box {
+  padding: 37px 30px;
+  border-radius: 10px;
+}
+.box1-shadow {
+  box-shadow: -2.57px 2.57px 0px 0px rgba(255, 255, 255, 1) inset;
+  background-color: rgba(244, 244, 244, 0.93);
+}
+.box2-shadow {
+  box-shadow: 0px 28px 57px 0px rgba(190, 190, 190, 0.25);
+  border: 1px solid;
+  border-image-source: linear-gradient(360deg, #ebebeb 4.73%, #ffffff 145.61%);
+}
+.circle {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: #49deff;
+  border: 1px solid rgba(30, 177, 229, 1);
+}
+.lead-team-box-border {
+  position: relative;
+  border-radius: 30px;
+  z-index: 0;
+}
+.paragraph-list {
+  font-family: "Jost", sans-serif;
+  font-family: 500;
+  font-size: 15px;
+  line-height: 100%;
+  color: rgba(255, 255, 255, 1);
+}
+
+.lead-team-box-border::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 1px;
+  border-radius: 12px;
+  background: linear-gradient(
+    280.22deg,
+    #e0e0e0 5.64%,
+    rgba(224, 224, 224, 0) 70.96%
+  );
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  z-index: -1;
+}
+.footer-box-border {
+  position: relative;
+  border-radius: 30px;
+  z-index: 0;
+}
+
+.footer-box-border::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 1px;
+  border-radius: 12px;
+  background: linear-gradient(282.45deg, #6c6c6c 7.11%, #303030 70.26%);
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  z-index: -1;
+}
+
+.button-try {
+  border-radius: 5px;
+  /* padding: 16px 26px; */
+  background-color: rgba(75, 227, 235, 1);
+  cursor: pointer;
+}
+.button-try:hover {
+  background-color: #49deff;
+}
+
+.button-download {
+  background-color: rgba(0, 0, 0, 1);
+  border-radius: 5px;
+  padding: 7px 11px;
+}
+.button-download:hover {
+  background-color: rgb(61, 60, 60);
+}
+
+.starter-pro-box {
+  box-shadow: 0px 28px 57px 0px rgba(190, 190, 190, 0.25);
+  border: 1px solid;
+  border-image-source: linear-gradient(360deg, #ebebeb 4.73%, #ffffff 145.61%);
+  border-radius: 30px;
+  padding: 53px;
+  background-color: #fff;
+}
+.paragraph {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  font-family: "Open Sans", sans-serif;
+}
+.paragraph-2 {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 160%;
+  font-family: "Open Sans", sans-serif;
+}
+.buttonXl-dark {
+  padding: 14px;
+  border-radius: 15px;
+  background-color: rgba(48, 48, 48, 1);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.buttonXl-dark:hover {
+  background-color: #5c5b5b;
+}
+.buttonXl-light {
+  padding: 17px 50px;
+  border-radius: 15px;
+  background-color: rgba(234, 234, 234, 1);
+  color: rgba(48, 48, 48, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.buttonXl-light:hover {
+  background-color: #bbbbbb;
+}
+.left-circle {
+  background-color: rgba(69, 69, 69, 1);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  padding: 6px;
+  cursor: pointer;
+}
+.left-circle::before {
+  content: "";
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 100% 40%);
+  transform: rotate(70deg);
+}
+.right-circle {
+  background-color: rgba(69, 69, 69, 1);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  padding: 6px;
+  cursor: pointer;
+}
+.right-circle::before {
+  content: "";
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  clip-path: polygon(100% 0%, 0% 0%, 40% 100%, 100% 100%);
+  transform: rotate(20deg);
+}
+.custom-dashed {
+  border-radius: 10px;
+  background-image:
+    linear-gradient(to right, rgba(219, 219, 219, 1) 50%, transparent 50%),
+    linear-gradient(to right, rgba(219, 219, 219, 1) 50%, transparent 50%),
+    linear-gradient(to bottom, rgba(219, 219, 219, 1) 50%, transparent 50%),
+    linear-gradient(to bottom, rgba(219, 219, 219, 1) 50%, transparent 50%);
+
+  background-size:
+    20px 2px,
+    20px 2px,
+    2px 20px,
+    2px 20px;
+
+  background-position:
+    top left,
+    bottom left,
+    top left,
+    top right;
+
+  background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+}

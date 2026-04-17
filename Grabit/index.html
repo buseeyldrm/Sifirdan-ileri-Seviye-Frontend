@@ -1,0 +1,851 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grabit</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo"><img src="./img/logo.png" alt="Logo" /></div>
+      <div class="search-box">
+        <input
+          class="search-input"
+          type="text"
+          placeholder="Search Products..."
+        />
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+      <div class="icons">
+        <div class="icon-item login-wrapper">
+          <i class="fa-regular fa-user"></i>
+          <div class="text">
+            <p class="title">Account</p>
+            <p class="desc">LOGIN</p>
+          </div>
+          <ul class="login-dropdown">
+            <li>Register</li>
+            <li>Checkout</li>
+            <li>Login</li>
+          </ul>
+        </div>
+        <div class="icon-item">
+          <i class="fa-regular fa-heart"></i>
+          <div class="text">
+            <p class="title">Wishlist</p>
+            <p class="desc">3-ITEMS</p>
+          </div>
+        </div>
+        <div class="icon-item">
+          <i class="fa-solid fa-bag-shopping cart-icon"></i>
+          <div class="text">
+            <p class="title">Cart</p>
+            <p class="desc">3-ITEMS</p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <nav class="navbar-header">
+      <div class="categories-wrapper">
+        <div class="categories-btn">
+          <i class="fa-solid fa-border-all"></i> <span>All Categories</span>
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+        <div class="categories-mega">
+          <ul class="categories-list">
+            <li class="active">
+              <i class="fa-solid fa-cheese"></i>Dairy & Bakery
+            </li>
+            <li><i class="fa-solid fa-apple-whole"></i> Fruits & Vegetable</li>
+            <li><i class="fa-solid fa-pepper-hot"></i> Snack & Spice</li>
+            <li><i class="fa-solid fa-mug-hot"></i> Juice & Drinks</li>
+          </ul>
+          <div class="categories-content">
+            <div class="column">
+              <h4>Dairy</h4>
+              <ul>
+                <li>Milk</li>
+                <li>Ice Cream</li>
+                <li>Cheese</li>
+                <li>Frozen Custard</li>
+                <li>Frozen Yogurt</li>
+              </ul>
+            </div>
+            <div class="column">
+              <h4>Bakery</h4>
+              <ul>
+                <li>Cake And Pastry</li>
+                <li>Rusk Toast</li>
+                <li>Bread & Buns</li>
+                <li>Chocolate Brownie</li>
+                <li>Cream Roll</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <ul class="nav-links"> <li>Home <i class="fa-solid fa-chevron-down"></i></li> <li>Categories <i class="fa-solid fa-chevron-down"></i></li> <li>Products <i class="fa-solid fa-chevron-down"></i></li> <li>Blog <i class="fa-solid fa-chevron-down"></i></li> <li>Others <i class="fa-solid fa-chevron-down"></i></li> <li class="offers"> <i class="fa-solid fa-percent"></i>Offers </li> </ul> -->
+      <div class="nav-links">
+        <div class="nav-home">
+          <div class="home">
+            <li>Home <i class="fa-solid fa-chevron-down"></i></li>
+            <div class="home-dropdown">
+              <li>Grocery</li>
+              <li>Fashion</li>
+              <li>Fashion 2</li>
+            </div>
+          </div>
+        </div>
+        <div class="nav-categories">
+          <div class="categories">
+            <li>Categories <i class="fa-solid fa-chevron-down"></i></li>
+            <div class="categories-dropdown">
+              <div>
+                <h4>Classic</h4>
+                <li>Left Sidebar 3 Column</li>
+                <li>Left Sidebar 4 Column</li>
+                <li>Right Sidebar 3 Column</li>
+                <li>Right Sidebar 4 Column</li>
+                <li>Full Width 4 Column</li>
+              </div>
+              <div>
+                <h4>Banner</h4>
+                <li>Left Sidebar 3 Column</li>
+                <li>Left Sidebar 4 Column</li>
+                <li>Right Sidebar 3 Column</li>
+                <li>Right Sidebar 4 Column</li>
+                <li>Full Width 4 Column</li>
+              </div>
+              <div>
+                <h4>Columns</h4>
+                <li>3 Column Full Width</li>
+                <li>4 Column Full Width</li>
+                <li>5 Column Full Width</li>
+                <li>6 Column Full Width</li>
+                <li>Banner 3 Columns</li>
+              </div>
+              <div>
+                <h4>List</h4>
+                <li>Shop Left Sidebar</li>
+                <li>Shop Right Sidebar</li>
+                <li>Banner Left Sidebar</li>
+                <li>Banner Right Sidebar</li>
+                <li>Full Width 2 Columns</li>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="nav product">
+          <div class="product">
+            <li>Products <i class="fa-solid fa-chevron-down"></i></li>
+            <ul class="product-dropdown">
+              <li class="has-sub">
+                Product Page <i class="fa-solid fa-chevron-right"></i>
+                <ul class="sub-menu">
+                  <li>Product Left Sidebar</li>
+                  <li>Product Right Sidebar</li>
+                </ul>
+              </li>
+              <li class="has-sub">
+                Product Accordion <i class="fa-solid fa-chevron-right"></i>
+                <ul class="sub-menu">
+                  <li>Accordion Style 1</li>
+                  <li>Accordion Style 2</li>
+                </ul>
+              </li>
+              <li>Product Full Width</li>
+              <li>Accordion Full Width</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="nav blog">
+          <div class="blog">
+            <li>Blog <i class="fa-solid fa-chevron-down"></i></li>
+            <div class="blog-dropdown">
+              <li>Left Sidebar</li>
+              <li>Right Sidebar</li>
+              <li>Full Width</li>
+              <li>Detail Left Sidebar</li>
+              <li>Detail Right Sidebar</li>
+              <li>Detail Full Width</li>
+            </div>
+          </div>
+        </div>
+        <div class="nav others">
+          <div class="others">
+            <li>Others <i class="fa-solid fa-chevron-down"></i></li>
+            <div class="others-dropdown">
+              <li>About Us</li>
+              <li>Contact Us</li>
+              <li>Cart</li>
+              <li>Checkout</li>
+              <li>Compare</li>
+              <li>FAQ</li>
+              <li>Login</li>
+              <li>Register</li>
+              <li>Track Order</li>
+              <li>Terms Condition</li>
+              <li>Privacy Policy</li>
+            </div>
+          </div>
+        </div>
+        <div class="nav offers">
+          <div class="offers">
+            <li class="offers"><i class="fa-solid fa-percent"></i>Offers</li>
+          </div>
+        </div>
+      </div>
+      <div class="location-wrapper">
+        <div class="location-btn">
+          <i class="fa-solid fa-location-dot"></i> <span>New York</span>
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+        <div class="location-dropdown">
+          <ul>
+            <li class="active">
+              <i class="fa-regular fa-compass"></i> Current Location
+            </li>
+            <li><i class="fa-regular fa-compass"></i> Los Angeles</li>
+            <li><i class="fa-regular fa-compass"></i> Chicago</li>
+            <li><i class="fa-regular fa-compass"></i> Houston</li>
+            <li><i class="fa-regular fa-compass"></i> Phoenix</li>
+            <li><i class="fa-regular fa-compass"></i> San Diego</li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="hero-section">
+      <div class="grabit-container">
+        <div class="slider-viewport">
+          <div class="slider-track">
+            <div class="slide">
+              <img src="./img/1.jpg" alt="Organic Vegetables" />
+              <div class="slide-content">
+                <span class="up-fade">Starting at $20</span>
+                <h1 class="up-fade">
+                  Organic & Healthy <br />
+                  Vegetables
+                </h1>
+                <button class="grabit-btn up-fade">Shop Now</button>
+              </div>
+            </div>
+
+            <div class="slide">
+              <img src="./img/2.jpg" alt="Healthy Food" />
+              <div class="slide-text-right">
+                <div class="slide-content">
+                  <span class="up-fade">Fresh & Natural</span>
+                  <h1 class="up-fade">
+                    Healthy Food For <br />
+                    Your Family
+                  </h1>
+                  <button class="grabit-btn up-fade">Shop Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="pagination">
+            <div class="dot active-dot-1"></div>
+            <div class="dot active-dot-2"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="categories">
+      <div class="category-card fruits">
+        <div class="inner">
+          <span class="badge">30%</span>
+          <div class="icon">
+            <i class="fa-solid fa-apple-whole"></i>
+          </div>
+          <h4>Fruits</h4>
+          <p>320 Items</p>
+        </div>
+      </div>
+
+      <div class="category-card bakery">
+        <div class="inner">
+          <div class="icon">
+            <i class="fa-solid fa-bread-slice"></i>
+          </div>
+          <h4>Bakery</h4>
+          <p>65 Items</p>
+        </div>
+      </div>
+
+      <div class="category-card veg">
+        <div class="inner">
+          <span class="badge">15%</span>
+          <div class="icon">
+            <i class="fa-solid fa-carrot"></i>
+          </div>
+          <h4>Vegetables</h4>
+          <p>548 Items</p>
+        </div>
+      </div>
+
+      <div class="category-card dairy">
+        <div class="inner">
+          <span class="badge">10%</span>
+          <div class="icon">
+            <i class="fa-solid fa-blender"></i>
+          </div>
+          <h4>Dairy & Milk</h4>
+          <p>48 Items</p>
+        </div>
+      </div>
+
+      <div class="category-card snack">
+        <div class="inner">
+          <div class="icon">
+            <i class="fa-solid fa-pepper-hot"></i>
+          </div>
+          <h4>Snack & Spice</h4>
+          <p>59 Items</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="count">
+      <div class="count-text">
+        <h1>Day Of The <span>Deal</span></h1>
+        <p>Dont wait. The time will never be just right.</p>
+      </div>
+      <div class="time"><b>-164</b> Days <b>8 : 34 : 25</b></div>
+    </div>
+
+    <div class="products">
+      <div class="productBox box double-img">
+        <div class="image">
+          <p class="sale">SALE</p>
+          <img class="visible-img" src="img/products1.jpg" alt="" />
+          <img class="hidden-img" src="img/product1.1.jpg" alt="" />
+          <div class="image-icons">
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-regular fa-eye"></i>
+            <i class="fa-solid fa-retweet"></i>
+            <i class="fa-solid fa-basket-shopping"></i>
+          </div>
+        </div>
+        <div class="product-desc">
+          <span>Dried Fruit</span>
+          <p class="product-title">Mixed Nuts Berries Pack</p>
+          <div class="star-icons">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <div class="prices">
+            <p class="price">$45.00</p>
+            <p class="discount">$56.00</p>
+          </div>
+        </div>
+      </div>
+      <div class="productBox box zoom-box">
+        <div class="image">
+          <p class="sale">SALE</p>
+          <img class="visible-img" src="img/products2.jpg" alt="" />
+          <div class="image-icons">
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-regular fa-eye"></i>
+            <i class="fa-solid fa-retweet"></i>
+            <i class="fa-solid fa-basket-shopping"></i>
+          </div>
+        </div>
+        <div class="product-desc">
+          <span>Cookies</span>
+          <p class="product-title">Multi Grain Combo</p>
+          <div class="star-icons">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <span class="info">10kg</span>
+          </div>
+          <div class="prices">
+            <p class="price">$25.00</p>
+            <p class="discount">$30.00</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="productBox box zoom-box">
+        <div class="image">
+          <img class="visible-img" src="img/products3.jpg" alt="" />
+          <div class="image-icons">
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-regular fa-eye"></i>
+            <i class="fa-solid fa-retweet"></i>
+            <i class="fa-solid fa-basket-shopping"></i>
+          </div>
+        </div>
+        <div class="product-desc">
+          <span>Foods</span>
+          <p class="product-title">Fresh Mango Juice</p>
+          <div class="star-icons">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <div class="prices">
+            <p class="price">$49.00</p>
+            <p class="discount">$65.00</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="productBox box double-img">
+        <div class="image">
+          <p class="sale">SALE</p>
+          <img class="visible-img" src="img/products4.jpg" alt="" />
+          <img class="hidden-img" src="img/product4.1.jpg" alt="" />
+          <div class="image-icons">
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-regular fa-eye"></i>
+            <i class="fa-solid fa-retweet"></i>
+            <i class="fa-solid fa-basket-shopping"></i>
+          </div>
+        </div>
+        <div class="product-desc">
+          <span>Dried Fruit</span>
+          <p class="product-title">Dates Value Fresh Pouch</p>
+          <div class="star-icons">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <div class="prices">
+            <p class="price">$78.00</p>
+            <p class="discount">$85.00</p>
+          </div>
+        </div>
+      </div>
+      <div class="productBox box double-img">
+        <div class="image">
+          <p class="new">NEW</p>
+          <img class="visible-img" src="img/products5.jpg" alt="" />
+          <img class="hidden-img" src="img/product5.1.jpg" alt="" />
+          <div class="image-icons">
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-regular fa-eye"></i>
+            <i class="fa-solid fa-retweet"></i>
+            <i class="fa-solid fa-basket-shopping"></i>
+          </div>
+        </div>
+        <div class="product-desc">
+          <span>Foods</span>
+          <p class="product-title">Stick Fiber Masala Magic</p>
+          <div class="star-icons">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <span class="info">2 pack</span>
+          </div>
+          <div class="prices">
+            <p class="price">$45.00</p>
+            <p class="discount">$50.00</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="screen">
+      <div class="screen-foto">
+        <img src="img/3.jpg" alt="" />
+        <div class="screen-info">
+          <h1>Fresh Fruits</h1>
+          <h2>Healthy Products</h2>
+          <p><span>30% off sale </span>Hurry up!!!</p>
+          <button class="screen-button">Shop now</button>
+        </div>
+      </div>
+    </div>
+    <div class="new-arrivals">
+      <div class="arrivals-left">
+        <h2>New <span>Arrivals</span></h2>
+        <p>Shop online for new arrivals and get free shipping!</p>
+      </div>
+
+      <div class="arrivals-right">
+        <ul>
+          <li class="active">ALL</li>
+          <li>SNACK & SPICES</li>
+          <li>FRUITS</li>
+          <li>VEGETABLES</li>
+        </ul>
+      </div>
+    </div>
+    <div class="products">
+      <div class="productBox box zoom-box">
+        <div class="image">
+          <p class="sale">SALE</p>
+          <img class="visible-img" src="img/products2.jpg" alt="" />
+          <div class="image-icons">
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-regular fa-eye"></i>
+            <i class="fa-solid fa-retweet"></i>
+            <i class="fa-solid fa-basket-shopping"></i>
+          </div>
+        </div>
+        <div class="product-desc">
+          <span>Dried Fruit</span>
+          <p class="product-title">Californian Almonds Value 250G +50g Pack</p>
+          <div class="star-icons">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <div class="prices">
+            <p class="price">$58.00</p>
+            <p class="discount">$65.00</p>
+          </div>
+        </div>
+      </div>
+      <div class="productBox box double-img">
+        <div class="image">
+          <p class="sale">SALE</p>
+          <img class="visible-img" src="img/products4.jpg" alt="" />
+          <img class="hidden-img" src="img/product4.1.jpg" alt="" />
+          <div class="image-icons">
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-regular fa-eye"></i>
+            <i class="fa-solid fa-retweet"></i>
+            <i class="fa-solid fa-basket-shopping"></i>
+          </div>
+        </div>
+        <div class="product-desc">
+          <span>Dried Fruits</span>
+          <p class="product-title">Dates Value Pouch Dates Value Pouch</p>
+          <div class="star-icons">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <div class="prices">
+            <p class="price">$78.00</p>
+            <p class="discount">$85.00</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="productBox box zoom-box">
+        <div class="image">
+          <p class="new">NEW</p>
+
+          <img class="visible-img" src="img/product7.jpg" alt="" />
+          <div class="image-icons">
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-regular fa-eye"></i>
+            <i class="fa-solid fa-retweet"></i>
+            <i class="fa-solid fa-basket-shopping"></i>
+          </div>
+        </div>
+        <div class="product-desc">
+          <span>Fresh Fruit</span>
+          <p class="product-title">Fresh Lichi 500g Pack</p>
+          <div class="star-icons">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <span class="info">500g</span>
+          </div>
+          <div class="prices">
+            <p class="price">$25.00</p>
+            <p class="discount">$35.00</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="productBox box double-img">
+        <div class="image">
+          <img class="visible-img" src="img/8.jpg" alt="" />
+          <img class="hidden-img" src="img/8_2.jpg" alt="" />
+          <div class="image-icons">
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-regular fa-eye"></i>
+            <i class="fa-solid fa-retweet"></i>
+            <i class="fa-solid fa-basket-shopping"></i>
+          </div>
+        </div>
+        <div class="product-desc">
+          <span>Snacks</span>
+          <p class="product-title">Smoked Honey Spiced Nuts Almonds Pack</p>
+          <div class="star-icons">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <div class="prices">
+            <p class="price">$32.00</p>
+            <p class="discount">$45.00</p>
+          </div>
+        </div>
+      </div>
+      <div class="productBox box double-img">
+        <div class="image">
+          <p class="new">NEW</p>
+          <img class="visible-img" src="img/9.jpg" alt="" />
+          <img class="hidden-img" src="img/9-2.jpg" alt="" />
+          <div class="image-icons">
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-regular fa-eye"></i>
+            <i class="fa-solid fa-retweet"></i>
+            <i class="fa-solid fa-basket-shopping"></i>
+          </div>
+        </div>
+        <div class="product-desc">
+          <span>Foods</span>
+          <p class="product-title">Banana Chips Snack Crunchy & Spicy Water</p>
+          <div class="star-icons">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <div class="prices">
+            <p class="price">$45.00</p>
+            <p class="discount">$50.00</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="productBox box double-img">
+        <div class="image">
+          <img class="visible-img" src="img/10.jpg" alt="" />
+          <img class="hidden-img" src="img/10-2.jpg" alt="" />
+          <div class="image-icons">
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-regular fa-eye"></i>
+            <i class="fa-solid fa-retweet"></i>
+            <i class="fa-solid fa-basket-shopping"></i>
+          </div>
+        </div>
+        <div class="product-desc">
+          <span>Foods</span>
+          <p class="product-title">Mixed Nuts & Almonds Dry Fruits 500G pACK</p>
+          <div class="star-icons">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <div class="prices">
+            <p class="price">$49.00</p>
+            <p class="discount">$65.00</p>
+          </div>
+        </div>
+      </div>
+      <div class="productBox box zoom-box">
+        <div class="image">
+          <img class="visible-img" src="img/products3.jpg" alt="" />
+          <div class="image-icons">
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-regular fa-eye"></i>
+            <i class="fa-solid fa-retweet"></i>
+            <i class="fa-solid fa-basket-shopping"></i>
+          </div>
+        </div>
+        <div class="product-desc">
+          <span>Foods</span>
+          <p class="product-title">Roasted Almost, Pumpkin Snacks</p>
+          <div class="star-icons">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <span class="info">1 kg</span>
+          </div>
+          <div class="prices">
+            <p class="price">$49.00</p>
+            <p class="discount">$65.00</p>
+          </div>
+        </div>
+      </div>
+      <div class="productBox box zoom-box">
+        <div class="image">
+          <img class="visible-img" src="img/11.jpg" alt="" />
+          <div class="image-icons">
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-regular fa-eye"></i>
+            <i class="fa-solid fa-retweet"></i>
+            <i class="fa-solid fa-basket-shopping"></i>
+          </div>
+        </div>
+        <div class="product-desc">
+          <span>Eggs</span>
+          <p class="product-title">Farm Eggs - Brown</p>
+          <div class="star-icons">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <span class="info">3 pcs</span>
+          </div>
+          <div class="prices">
+            <p class="price">$3.00</p>
+            <p class="discount">$5.00</p>
+          </div>
+        </div>
+      </div>
+      <div class="productBox box zoom-box">
+        <div class="image">
+          <p class="new">NEW</p>
+          <img class="visible-img" src="img/12.jpg" alt="" />
+          <div class="image-icons">
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-regular fa-eye"></i>
+            <i class="fa-solid fa-retweet"></i>
+            <i class="fa-solid fa-basket-shopping"></i>
+          </div>
+        </div>
+        <div class="product-desc">
+          <span>Snacks</span>
+          <p class="product-title">Carrot & Broccoli Soup Mix 250g Pack</p>
+          <div class="star-icons">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <span class="info">1 kg</span>
+          </div>
+          <div class="prices">
+            <p class="price">$25.00</p>
+            <p class="discount">$35.00</p>
+          </div>
+        </div>
+      </div>
+      <div class="productBox box zoom-box">
+        <div class="image">
+          <img class="visible-img" src="img/13.jpg" alt="" />
+          <div class="image-icons">
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-regular fa-eye"></i>
+            <i class="fa-solid fa-retweet"></i>
+            <i class="fa-solid fa-basket-shopping"></i>
+          </div>
+        </div>
+        <div class="product-desc">
+          <span>Tuber Root</span>
+          <p class="product-title">Ginger - Organic</p>
+          <div class="star-icons">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <span class="info">100 g</span>
+          </div>
+          <div class="prices">
+            <p class="price">$2.00</p>
+            <p class="discount">$3.00</p>
+          </div>
+        </div>
+      </div>
+ </div>
+      <div class="screenBoxes">
+        <div class="boxScreen">
+          <div class="screenLeft">
+            <div class="screenImage">
+              <span class="screen-badge">%70 Off</span>
+              <img src="img/screen.jpg" alt="" />
+            </div>
+            <div class="screen-content">
+              <h2>Tasty Snack</h2>
+              <h2>& Fastfood</h2>
+              <p>The Flavor Of Something Special</p>
+              <button>Shop Now</button>
+            </div>
+          </div>
+          <div class="screenRight">
+            <div class="screenImage">
+              <span class="screen-badge">50% Off</span>
+              <img src="img/screen2.jpg" alt="" />
+            </div>
+            <div class="screen-content">
+              <h2>Fresh Fruits</h2>
+              <h2>& Veggies</h2>
+              <p>A Healthy Meal For Every One</p>
+              <button>Shop Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="info-box">
+      <div class="infoBox box1">
+        <div class="boxIcon">
+          <i class="fa-solid fa-truck"></i>
+          <h3>Free Ahipping</h3>
+          <p class="box-desc">
+            Free shipping on all US order or order above $200
+          </p>
+        </div>
+      </div>
+      <div class="infoBox box1">
+        <div class="boxIcon">
+          <i class="fa-regular fa-hand"></i>
+          <h3>24X7 Support</h3>
+          <p class="box-desc">Contact us 24 hours a day, 7 days a week</p>
+        </div>
+      </div>
+      <div class="infoBox box1">
+        <div class="boxIcon">
+          <i class="fa-regular fa-circle-pause"></i>
+          <h3>30 Days Return</h3>
+          <p class="box-desc">
+            Simply return it within 30 days for an exchange
+          </p>
+        </div>
+      </div>
+      <div class="infoBox box1">
+        <div class="boxIcon">
+          <i class="fa-regular fa-money-bill-1"></i>
+          <h3>Payment Secure</h3>
+          <p class="box-desc">Contact us 24 hours a day, 7 days a week</p>
+        </div>
+      </div>
+    </div>
+
+    <input type="checkbox" id="sidebar-check" class="sidebar-checkbox" />
+
+    <label for="sidebar-check" class="settings-toggle">
+      <i class="fas fa-cog fa-spin"></i>
+    </label>
+
+    <label for="sidebar-check" class="sidebar-overlay"></label>
+
+    <div class="settings-sidebar"></div>
+  </body>
+</html>

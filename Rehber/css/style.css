@@ -1,0 +1,846 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  font-family: "Lato", sans-serif;
+}
+
+.sidebar-menu {
+  width: 84px;
+  display: flex;
+  align-items: center;
+}
+.sidebar-menu .sidebar {
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+  width: 44px;
+  gap: 100px;
+}
+.sidebar-menu .sidebar .voice-icon {
+  background-color: rgb(107, 89, 204);
+  border-radius: 14px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.sidebar-menu .sidebar .voice-icon .voice-box {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sidebar-menu .sidebar .voice-icon .voice-box svg {
+  padding: 11px 10px 0 11px;
+}
+.sidebar-menu .sidebar .sidebar-icons {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-direction: column;
+  width: 40px;
+  padding: 20px;
+  gap: 30px;
+  margin-bottom: 150px;
+}
+.sidebar-menu .sidebar .sidebar-icons .icon {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sidebar-menu .sidebar .sidebar-icons .icon .icon-inner {
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+}
+.sidebar-menu .sidebar .sidebar-icons .icon:hover .icon-inner {
+  border: 1px solid rgb(236, 238, 245);
+}
+.sidebar-menu .sidebar .sidebar-icons .icon:hover .icon-inner svg path {
+  fill: rgb(107, 89, 204);
+}
+.sidebar-menu .sidebar .sidebar-icons .active {
+  position: relative;
+}
+.sidebar-menu .sidebar .sidebar-icons .active .green {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background-color: rgb(40, 195, 69);
+  border-radius: 50%;
+  top: 0px;
+  right: 0px;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+main header {
+  width: 100%;
+  border-bottom: 1px solid rgb(236, 238, 245);
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+main header .header-left {
+  width: 100%;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 22px 32px;
+  background-color: rgb(250, 249, 255);
+}
+@media (min-width: 1024px) {
+  main header .header-left {
+    width: 500px;
+    justify-content: center;
+  }
+}
+main header .header-left .contacts {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+main header .header-left .contacts .left-icon {
+  position: relative;
+  width: 40px;
+  height: 40px;
+}
+main header .header-left .contacts .left-icon .contact-hamburger {
+  border: 1px solid rgb(236, 238, 245);
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+  flex-shrink: 0;
+}
+@media (min-width: 1024px) {
+  main header .header-left .contacts .left-icon .contact-hamburger {
+    display: flex;
+  }
+}
+main header .header-left .contacts .left-icon .contact-hamburger svg {
+  padding: 11px;
+}
+main header .header-left .contacts .left-icon .contact-hamburger:hover {
+  background-color: rgba(77, 76, 172, 0.1);
+}
+main header .header-left .contacts .left-icon .contact-hamburger:hover svg path {
+  fill: rgb(107, 89, 204);
+}
+main header .header-left .contacts .left-icon .header-voice-icon {
+  background-color: rgb(107, 89, 204);
+  border-radius: 14px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+@media (min-width: 1024px) {
+  main header .header-left .contacts .left-icon .header-voice-icon {
+    display: none;
+  }
+}
+main header .header-left .contacts .left-icon .header-voice-icon .voice-box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main header .header-left .contacts .left-icon .header-voice-icon .voice-box svg {
+  padding: 11px 10px 0 11px;
+}
+main header .header-left .contacts p {
+  color: rgb(26, 28, 29);
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 32px;
+  display: none;
+}
+@media (min-width: 1024px) {
+  main header .header-left .contacts p {
+    display: block;
+  }
+}
+main header .header-left .right-icon {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+main header .header-left .right-icon .contacts-icon {
+  width: 100%;
+  display: none;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 8px;
+  position: absolute;
+}
+@media (min-width: 1024px) {
+  main header .header-left .right-icon .contacts-icon {
+    display: flex;
+  }
+}
+main header .header-left .right-icon .contacts-icon .icon {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  border: 1px solid rgb(236, 238, 245);
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+main header .header-left .right-icon .contacts-icon .icon:hover {
+  background-color: rgba(77, 76, 172, 0.1);
+}
+main header .header-left .right-icon .contacts-icon .icon:hover svg path {
+  fill: rgb(107, 89, 204);
+}
+main header .header-left .right-icon .profile {
+  position: absolute;
+  display: flex;
+  gap: 8px;
+}
+@media (min-width: 1024px) {
+  main header .header-left .right-icon .profile {
+    display: none;
+  }
+}
+main header .header-left .right-icon .profile .search-button {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid rgb(236, 238, 245);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+main header .header-left .right-icon .profile .search-button svg {
+  padding: 9px;
+}
+main header .header-left .right-icon .profile .search-button:hover {
+  background-color: rgba(77, 76, 172, 0.1);
+}
+main header .header-left .right-icon .profile .search-button:hover svg path {
+  fill: rgb(107, 89, 204);
+}
+main header .header-left .right-icon .profile .header-profile {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+main header .header-left .right-icon .profile .header-profile img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 8px;
+}
+main header .header-left .right-icon .profile .hamburger-bar {
+  border: 1px solid rgb(236, 238, 245);
+  border-radius: 10px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+  flex-shrink: 0;
+}
+main header .header-left .right-icon .profile .hamburger-bar svg {
+  padding: 11px;
+}
+main header .header-left .right-icon .profile .hamburger-bar:hover {
+  background-color: rgba(77, 76, 172, 0.1);
+}
+main header .header-left .right-icon .profile .hamburger-bar:hover svg path {
+  fill: rgb(107, 89, 204);
+}
+main header .header-right {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 22px 32px;
+}
+main header .header-right .header-person {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid rgb(236, 238, 245);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+  cursor: pointer;
+}
+main header .header-right .header-person svg {
+  padding: 9px;
+}
+main header .header-right .header-person:hover {
+  background-color: rgba(77, 76, 172, 0.1);
+}
+main header .header-right .header-person:hover svg path {
+  fill: rgb(107, 89, 204);
+}
+main header .header-right .border-line {
+  width: 1px;
+  height: 24px;
+  margin-right: 21px;
+  background-color: rgb(236, 238, 245);
+}
+main header .header-right .search-button {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid rgb(236, 238, 245);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 8px;
+  cursor: pointer;
+}
+main header .header-right .search-button svg {
+  padding: 9px;
+}
+main header .header-right .search-button:hover {
+  background-color: rgba(77, 76, 172, 0.1);
+}
+main header .header-right .search-button:hover svg path {
+  fill: rgb(107, 89, 204);
+}
+main header .header-right .header-profile {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+main header .header-right .header-profile img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 8px;
+}
+main section {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+main section .main-left {
+  width: 500px;
+  flex-shrink: 0;
+  padding: 28px 45px 20px 17px;
+  background-color: rgb(250, 249, 255);
+  border-right: 1px solid rgb(236, 238, 245);
+}
+main section .main-left .search-contact {
+  color: rgb(128, 131, 163);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}
+main section .main-left .person-info {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 8px;
+}
+main section .main-left .person-info p {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+  color: rgb(26, 28, 29);
+}
+main section .main-left .person-info .search-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+}
+main section .main-left .person-info .search-icon:hover {
+  border: 1px solid rgb(107, 89, 204);
+  background-color: rgba(77, 76, 172, 0.1);
+}
+main section .main-left .persons {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main section .main-left .persons .person-card {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 18px 12px 18px;
+  gap: 9px;
+}
+@media (max-width: 768px) {
+  main section .main-left .persons .person-card {
+    padding: 12px 0;
+  }
+}
+main section .main-left .persons .person-card .card {
+  width: 100%;
+  display: flex;
+  gap: 18px;
+}
+main section .main-left .persons .person-card .card .person-img {
+  width: 36px;
+  height: 36px;
+  position: relative;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+main section .main-left .persons .person-card .card .person-img img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+main section .main-left .persons .person-card .card .person-img .active-person {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -4px;
+  right: -3px;
+  background-color: rgb(40, 195, 69);
+  border: 2px solid rgb(255, 255, 255);
+}
+main section .main-left .persons .person-card .card .person-img .half-active-person {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -4px;
+  right: -3px;
+  background-color: rgb(255, 128, 139);
+  border: 2px solid rgb(255, 255, 255);
+}
+main section .main-left .persons .person-card .card .person-name h3 {
+  color: rgb(26, 28, 29);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+}
+main section .main-left .persons .person-card .card .person-name span {
+  color: rgb(128, 131, 163);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}
+main section .main-left .persons .person-card .person-icons {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  gap: 6px;
+  align-items: center;
+  cursor: pointer;
+}
+main section .main-left .persons .person-card .person-icons .icon {
+  border: 1px solid rgb(236, 238, 245);
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main section .main-left .persons .person-card .person-icons .icon:hover {
+  background-color: rgba(77, 76, 172, 0.1);
+}
+main section .main-left .persons .person-card .person-icons .icon:hover svg path {
+  fill: rgb(107, 89, 204);
+}
+main section .main-left .persons .person-card .person-icons .icon svg {
+  padding: 9px;
+}
+main section .main-left .persons .person-card .open-box .icon {
+  background-color: rgba(77, 76, 172, 0.1);
+}
+main section .main-left .persons .person-card .open-box .icon svg path {
+  fill: rgb(107, 89, 204);
+}
+main section .main-right {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 127px 107px 145px 58px;
+}
+main section .main-right .employee-info {
+  max-width: 405px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  margin: 0 auto;
+}
+main section .main-right .employee-info .employee-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 114px;
+  height: 114px;
+  border-radius: 26px;
+  flex-shrink: 0;
+}
+main section .main-right .employee-info .employee-img img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 26px;
+}
+main section .main-right .employee-info .employee-desc {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+main section .main-right .employee-info .employee-desc .employee-name {
+  width: 100%;
+}
+main section .main-right .employee-info .employee-desc .employee-name h2 {
+  color: rgb(26, 28, 29);
+  font-weight: 700;
+  line-height: 32px;
+  font-size: 20px;
+}
+main section .main-right .employee-info .employee-desc .employee-name span {
+  font-weight: 400;
+  line-height: 21px;
+  font-size: 14px;
+  color: rgb(128, 131, 163);
+}
+main section .main-right .employee-info .employee-desc .employee-contact {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 21px;
+}
+main section .main-right .employee-info .employee-desc .employee-contact .message-button {
+  background-color: rgb(107, 89, 204);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+  padding: 11px 17px 12px 18px;
+  gap: 6px;
+  cursor: pointer;
+}
+main section .main-right .employee-info .employee-desc .employee-contact .message-button p {
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+  margin: 0;
+}
+main section .main-right .employee-info .employee-desc .employee-contact .icon {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  border: 1px solid rgb(236, 238, 245);
+  width: 42px;
+  height: 43px;
+  cursor: pointer;
+}
+main section .main-right .employee-info .employee-desc .employee-contact .icon svg {
+  padding: 12px;
+}
+main section .main-right .employee-info .employee-desc .employee-contact .icon:hover {
+  background-color: rgba(77, 76, 172, 0.1);
+}
+main section .main-right .employee-info .employee-desc .employee-contact .icon:hover svg path {
+  fill: rgb(107, 89, 204);
+}
+main section .main-right .employee-about {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 39px;
+}
+main section .main-right .employee-about h4 {
+  min-width: 70px;
+  text-align: right;
+  margin-right: 34px;
+  white-space: nowrap;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: rgb(128, 131, 163);
+  flex-shrink: 0;
+}
+main section .main-right .employee-about p {
+  font-size: 14px;
+  line-height: 21px;
+  color: rgb(26, 28, 29);
+  font-weight: 400;
+}
+main section .main-right .employee-about .bio,
+main section .main-right .employee-about .email,
+main section .main-right .employee-about .phone,
+main section .main-right .employee-about .dial,
+main section .main-right .employee-about .meeting,
+main section .main-right .employee-about .social {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  margin-top: 26px;
+}
+main section .main-right .employee-about .box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main section .main-right .employee-about .box .left {
+  display: flex;
+  flex-direction: column;
+}
+main section .main-right .employee-about .box .right {
+  display: flex;
+  justify-content: flex-end;
+}
+main section .main-right .employee-about .box .right p {
+  padding: 3px 12px 4px 13px;
+  background-color: rgb(243, 244, 249);
+  border-radius: 8px;
+  font-weight: 700;
+  color: rgb(128, 131, 163);
+}
+main section .main-right .employee-about .social-icons {
+  display: flex;
+  gap: 6px;
+}
+main section .main-right .employee-about .social-icons .icon {
+  border: 1px solid rgb(236, 238, 245);
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+main section .main-right .employee-about .social-icons .icon:hover {
+  background-color: rgba(77, 76, 172, 0.1);
+}
+main section .main-right .employee-about .social-icons .icon:hover svg path {
+  fill: rgb(107, 89, 204);
+}
+
+@media (max-width: 768px) {
+  .sidebar-menu {
+    display: none !important;
+  }
+  body {
+    display: block;
+  }
+  main {
+    width: 100%;
+  }
+  header {
+    flex-direction: row;
+  }
+  .header-right {
+    display: none !important;
+  }
+  .header-left {
+    width: 100% !important;
+    padding: 16px 30px;
+    background-color: rgb(250, 249, 255);
+  }
+  .header-left .contacts p {
+    font-size: 22px;
+    line-height: 26px;
+  }
+  section {
+    flex-direction: column;
+  }
+  .main-left {
+    width: 100% !important;
+    padding: 12px 0;
+    min-height: calc(100vh - 84px);
+  }
+  .main-right {
+    display: none !important;
+  }
+}/*# sourceMappingURL=style.css.map */

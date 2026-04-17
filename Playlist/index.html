@@ -1,0 +1,716 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Playlist</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="container-left">
+      <div class="logo">
+        <img src="./image/logo.png" alt="" />
+      </div>
+      <div class="sidebar-menu">
+        <div class="menu">
+          <h2>MY AUDIBLE</h2>
+          <div class="menu-bar">
+            <div class="menu-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M5 3C4.44772 3 4 3.44772 4 4V20C4 20.5523 4.44772 21 5 21H6C6.55228 21 7 20.5523 7 20V4C7 3.44772 6.55228 3 6 3H5ZM10 3C9.44772 3 9 3.44772 9 4V20C9 20.5523 9.44772 21 10 21H11C11.5523 21 12 20.5523 12 20V4C12 3.44772 11.5523 3 11 3H10Z"
+                  fill="#F8991C" />
+                <rect opacity="0.3" x="13.4775" y="3.92383" width="3" height="18" rx="1"
+                  transform="rotate(-19 13.4775 3.92383)" fill="#F8991C" />
+              </svg>
+              <span>Library</span>
+            </div>
+            <div class="menu-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M16.5 4.5C14.8905 4.5 13.0083 6.32463 12 7.5C10.9917 6.32463 9.1095 4.5 7.5 4.5C4.651 4.5 3 6.72218 3 9.55041C3 14.25 12 19.5 12 19.5C12 19.5 21 14.25 21 9.75C21 6.92177 19.349 4.5 16.5 4.5Z"
+                  fill="#F8991C" />
+              </svg>
+              <span>My Favorites</span>
+            </div>
+            <div class="menu-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path opacity="0.3" fill-rule="evenodd" clip-rule="evenodd"
+                  d="M14 11.4727C14.8262 12.2121 15.8584 12.726 17 12.9175V20.5004C17 21.3289 16.3284 22.0004 15.5 22.0004C14.6716 22.0004 14 21.3289 14 20.5004V11.4727Z"
+                  fill="#F8991C" />
+                <path opacity="0.3" fill-rule="evenodd" clip-rule="evenodd"
+                  d="M7 12.9175C8.14157 12.726 9.17384 12.2121 10 11.4727V20.5004C10 21.3289 9.32843 22.0004 8.5 22.0004C7.67157 22.0004 7 21.3289 7 20.5004V12.9175Z"
+                  fill="#F8991C" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M18 12C20.7614 12 23 9.76142 23 7C23 4.23858 20.7614 2 18 2C15.2386 2 13 4.23858 13 7C13 9.76142 15.2386 12 18 12ZM14 7.25C14 6.83579 14.3358 6.5 14.75 6.5H15.25C15.6642 6.5 16 6.83579 16 7.25C16 7.66421 15.6642 8 15.25 8H14.75C14.3358 8 14 7.66421 14 7.25ZM21 5C20.4477 5 20 5.44772 20 6V8C20 8.55228 20.4477 9 21 9C21.5523 9 22 8.55228 22 8V6C22 5.44772 21.5523 5 21 5Z"
+                  fill="#F8991C" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M6 12C8.76142 12 11 9.76142 11 7C11 4.23858 8.76142 2 6 2C3.23858 2 1 4.23858 1 7C1 9.76142 3.23858 12 6 12ZM8 7.25C8 6.83579 8.33579 6.5 8.75 6.5H9.25C9.66421 6.5 10 6.83579 10 7.25C10 7.66421 9.66421 8 9.25 8H8.75C8.33579 8 8 7.66421 8 7.25ZM3 5C2.44772 5 2 5.44772 2 6V8C2 8.55228 2.44772 9 3 9C3.55228 9 4 8.55228 4 8V6C4 5.44772 3.55228 5 3 5Z"
+                  fill="#F8991C" />
+              </svg>
+              <span>Listen Again</span>
+            </div>
+            <div class="menu-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M19 2H7C5.2536 2 4 3.30584 4 5V19C4 20.6942 5.2536 22 7 22H19C19.6418 22 20 21.6269 20 21V20H8C7.44772 20 7 19.5523 7 19C7 18.4477 7.44772 18 8 18H20V3C20 2.3731 19.6418 2 19 2Z"
+                  fill="#F8991C" />
+                <mask id="mask0_311_1228" style="mask-type: luminance" maskUnits="userSpaceOnUse" x="4" y="2" width="16"
+                  height="20">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M19 2H7C5.2536 2 4 3.30584 4 5V19C4 20.6942 5.2536 22 7 22H19C19.6418 22 20 21.6269 20 21V20H8C7.44772 20 7 19.5523 7 19C7 18.4477 7.44772 18 8 18H20V3C20 2.3731 19.6418 2 19 2Z"
+                    fill="white" />
+                </mask>
+                <g mask="url(#mask0_311_1228)"></g>
+              </svg>
+              <span>Bookmarks</span>
+            </div>
+            <div class="menu-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M6.20714 12.5852C6.07559 12.8483 6.06655 13.1559 6.18242 13.4263L8.86984 19.697C8.94863 19.8808 9.1294 20 9.32942 20H14.67C14.87 20 15.0508 19.8808 15.1296 19.697L17.817 13.4263C17.9329 13.1559 17.9239 12.8483 17.7923 12.5852L12.9997 3V11C12.9997 11.0862 12.9888 11.1699 12.9683 11.2498C13.5834 11.5909 13.9997 12.2468 13.9997 13C13.9997 14.1046 13.1043 15 11.9997 15C10.8951 15 9.99972 14.1046 9.99972 13C9.99972 12.2468 10.4161 11.5909 11.0312 11.2498C11.0106 11.1699 10.9997 11.0862 10.9997 11V3L6.20714 12.5852Z"
+                  fill="#F8991C" />
+                <path opacity="0.3" d="M9 22C9 21.4477 9.44772 21 10 21H14C14.5523 21 15 21.4477 15 22V23H9V22Z"
+                  fill="#F8991C" />
+              </svg>
+              <span>Notes</span>
+            </div>
+          </div>
+        </div>
+        <div class="menu">
+          <h2>GET MORE</h2>
+          <div class="menu-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect opacity="0.3" x="2" y="2" width="10" height="12" rx="2" fill="#F8991C" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M4 6C2.89543 6 2 6.89543 2 8V20C2 21.1046 2.89543 22 4 22H20C21.1046 22 22 21.1046 22 20V8C22 6.89543 21.1046 6 20 6H4ZM20 14C20 15.1046 19.1046 16 18 16C16.8954 16 16 15.1046 16 14C16 12.8954 16.8954 12 18 12C19.1046 12 20 12.8954 20 14Z"
+                fill="#F8991C" />
+            </svg>
+            <span>On Sale</span>
+          </div>
+          <div class="menu-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12ZM14.1655 7.35484C14.5093 7.12782 14.9648 7.39077 14.9401 7.80205L14.6131 13.2504C14.6036 13.4075 14.5208 13.551 14.3894 13.6377L9.83451 16.6452C9.49067 16.8722 9.03523 16.6092 9.05992 16.1979L9.38695 10.7496C9.39637 10.5925 9.47922 10.449 9.61055 10.3623L14.1655 7.35484Z"
+                fill="#F8991C" />
+            </svg>
+            <span>Discover</span>
+          </div>
+          <div class="menu-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M11 19.5229C11 20.265 11.9624 20.5564 12.374 19.9389L18.2227 11.166C18.5549 10.6676 18.1976 10 17.5986 10H13V4.47708C13 3.73503 12.0376 3.44363 11.626 4.06106L5.77735 12.834C5.44507 13.3324 5.80237 14 6.40139 14H11V19.5229Z"
+                fill="#F8991C" />
+            </svg>
+            <span>Trending</span>
+          </div>
+          <div class="menu-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M11.0659 16.0731C11.6127 16.5078 12.3871 16.5075 12.9336 16.0724L19.36 10.9565L19.5182 10.8312C20.2755 10.2315 20.2768 9.08264 19.5207 8.48129L12.9337 3.24257C12.3871 2.80788 11.6129 2.80788 11.0663 3.24257L4.47483 8.48489C3.72015 9.08509 3.71966 10.2312 4.47383 10.8321L4.63 10.9565L11.0659 16.0731Z"
+                fill="#F8991C" />
+              <path opacity="0.3" fill-rule="evenodd" clip-rule="evenodd"
+                d="M12.923 18.6702C12.3765 19.1048 11.6024 19.1049 11.0559 18.6704L5.33786 14.1245C4.94262 13.8103 4.36679 13.8798 4.05763 14.279C3.74994 14.6763 3.82439 15.2481 4.22355 15.5534L11.0868 20.8028C11.6246 21.2141 12.3713 21.2142 12.9091 20.803L19.7691 15.5581C20.1717 15.2503 20.2465 14.6736 19.9359 14.2732C19.6242 13.8715 19.0443 13.8018 18.6463 14.1183L12.923 18.6702Z"
+                fill="#F8991C" />
+            </svg>
+            <span>Recommendations</span>
+          </div>
+        </div>
+
+        <div class="menu">
+          <h2>ACCOUNT</h2>
+          <div class="menu-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path opacity="0.3"
+                d="M12 11C9.79086 11 8 9.20914 8 7C8 4.79086 9.79086 3 12 3C14.2091 3 16 4.79086 16 7C16 9.20914 14.2091 11 12 11Z"
+                fill="#F8991C" />
+              <path
+                d="M3.00065 20.1992C3.38826 15.4265 7.26191 13 11.9833 13C16.7712 13 20.7049 15.2932 20.9979 20.2C21.0096 20.3955 20.9979 21 20.2467 21C16.5411 21 11.0347 21 3.7275 21C3.47671 21 2.97954 20.4592 3.00065 20.1992Z"
+                fill="#F8991C" />
+            </svg>
+            <span>My Account</span>
+          </div>
+          <div class="menu-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M11.0659 16.0731C11.6127 16.5078 12.3871 16.5075 12.9336 16.0724L19.36 10.9565L19.5182 10.8312C20.2755 10.2315 20.2768 9.08264 19.5207 8.48129L12.9337 3.24257C12.3871 2.80788 11.6129 2.80788 11.0663 3.24257L4.47483 8.48489C3.72015 9.08509 3.71966 10.2312 4.47383 10.8321L4.63 10.9565L11.0659 16.0731Z"
+                fill="#F8991C" />
+              <path opacity="0.3" fill-rule="evenodd" clip-rule="evenodd"
+                d="M12.923 18.6702C12.3765 19.1048 11.6024 19.1049 11.0559 18.6704L5.33786 14.1245C4.94262 13.8103 4.36679 13.8798 4.05763 14.279C3.74994 14.6763 3.82439 15.2481 4.22355 15.5534L11.0868 20.8028C11.6246 21.2141 12.3713 21.2142 12.9091 20.803L19.7691 15.5581C20.1717 15.2503 20.2465 14.6736 19.9359 14.2732C19.6242 13.8715 19.0443 13.8018 18.6463 14.1183L12.923 18.6702Z"
+                fill="#F8991C" />
+            </svg>
+            <span>History</span>
+          </div>
+          <div class="menu-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M15.9494 3.80795L13.0242 6.73309C12.2432 7.51414 12.2432 8.78047 13.0242 9.56151L14.4385 10.9757C15.2195 11.7568 16.4858 11.7568 17.2669 10.9757L20.192 8.05059C20.7337 10.0451 20.2292 12.256 18.6742 13.8111C16.845 15.6403 14.1082 16.0159 11.8836 14.9448L6.75699 20.0714C5.97594 20.8525 4.70961 20.8525 3.92856 20.0714C3.14751 19.2904 3.14751 18.024 3.92856 17.243L9.05519 12.1163C7.9841 9.89178 8.35968 7.15501 10.1889 5.32578C11.7439 3.77075 13.9548 3.26623 15.9494 3.80795Z"
+                fill="#F8991C" />
+              <path opacity="0.3" fill-rule="evenodd" clip-rule="evenodd"
+                d="M16.6571 5.92864L18.0713 7.34285C18.4618 7.73337 18.4618 8.36654 18.0713 8.75706L16.6916 10.1367C16.3011 10.5273 15.6679 10.5273 15.2774 10.1367L13.8632 8.72252C13.4727 8.332 13.4727 7.69884 13.8632 7.30831L15.2429 5.92864C15.6334 5.53811 16.2666 5.53811 16.6571 5.92864Z"
+                fill="#F8991C" />
+            </svg>
+            <span>Settings</span>
+          </div>
+          <div class="menu-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M7.62302 5.30214C8.08509 4.99963 8.7049 5.12897 9.00742 5.59104C9.30993 6.0531 9.18059 6.67291 8.71852 6.97543C7.03469 8.07784 6 9.94983 6 11.9995C6 15.3132 8.68629 17.9995 12 17.9995C15.3137 17.9995 18 15.3132 18 11.9995C18 9.99502 17.0108 8.15921 15.3876 7.04651C14.932 6.73425 14.8159 6.11183 15.1281 5.65629C15.4404 5.20076 16.0628 5.08461 16.5184 5.39687C18.68 6.87863 20 9.32838 20 11.9995C20 16.4178 16.4183 19.9995 12 19.9995C7.58172 19.9995 4 16.4178 4 11.9995C4 9.26805 5.38057 6.77028 7.62302 5.30214Z"
+                fill="#F8991C" />
+              <rect opacity="0.3" x="11" y="3" width="2" height="10" rx="1" fill="#F8991C" />
+            </svg>
+            <span>Logout</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-middle">
+      <div class="header-logo">
+        <div class="header-img">
+          <img src="./image/logo.png" alt="">
+        </div>
+        <div class="header-hamburger">
+          <i class="fa-solid fa-bars"></i>
+
+        </div>
+      </div>
+      <div class="container-title-menu">
+        <div class="container-middle-title">
+          <h4 class="books">Books</h4>
+          <h4>Podcast</h4>
+          <h4>Live</h4>
+          <h4>Radio</h4>
+        </div>
+        <div class="container-title-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="7" cy="12" r="2" fill="currentColor" />
+            <circle cx="17.1431" cy="12" r="2" fill="currentColor" />
+          </svg>
+        </div>
+      </div>
+
+      <div class="midde-cards">
+        <div class="cards-title">
+          <div class="card-left">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M13 18.2247C13 18.5881 13.3773 18.8393 13.7182 18.7135C14.959 18.2553 17.7406 17.3745 21.5373 17.0375C21.7979 17.0143 22 16.8035 22 16.5419C22 14.651 22 7.46258 22 5.49819C22 5.22205 21.7785 5.00168 21.5027 5.0152C20.2481 5.07668 16.8035 5.37939 13.2985 6.86977C13.1166 6.94709 13 7.12543 13 7.32303C13 8.9092 13 15.8774 13 18.2247Z"
+                fill="#F8991C" />
+              <path opacity="0.3" fill-rule="evenodd" clip-rule="evenodd"
+                d="M11 18.2247C11 18.5881 10.6227 18.8393 10.2818 18.7135C9.04097 18.2553 6.25942 17.3745 2.46271 17.0375C2.20214 17.0143 1.99999 16.8035 1.99999 16.5419C1.99999 14.651 1.99999 7.46258 1.99999 5.49819C1.99999 5.22205 2.22147 5.00168 2.49728 5.0152C3.75193 5.07668 7.19651 5.37939 10.7015 6.86977C10.8834 6.94709 11 7.12543 11 7.32303C11 8.9092 11 15.8774 11 18.2247Z"
+                fill="#F8991C" />
+            </svg>
+            <h3>From The Library</h3>
+
+          </div>
+          <div class="card-right">
+            <p>See All</p>
+          </div>
+        </div>
+
+        <div class="cards">
+          <div class="card">
+            <div class="card-info">
+               <div class="image">
+              <img src="./image/card-image1.png" alt="">
+              <div class="play-icon">
+                <svg width="39" height="40" viewBox="0 0 39 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="39" height="40" rx="10" fill="white" />
+                  <path
+                    d="M14 24.4209V15.5791C14 14.0145 15.7157 13.0558 17.0482 13.8758L24.2321 18.2967C25.5012 19.0777 25.5012 20.9223 24.2321 21.7033L17.0482 26.1242C15.7157 26.9442 14 25.9855 14 24.4209Z"
+                    fill="#FA7C05" />
+                </svg>
+
+              </div>
+            </div>
+
+            <div class="card-desc">
+              <p>48 Laws of Power</p>
+              <span>Robert Greene</span>
+            </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-info">
+                <div class="image">
+              <img src="./image/card-image2.png" alt="">
+              <div class="play-icon">
+                <svg width="39" height="40" viewBox="0 0 39 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="39" height="40" rx="10" fill="white" />
+                  <path
+                    d="M14 24.4209V15.5791C14 14.0145 15.7157 13.0558 17.0482 13.8758L24.2321 18.2967C25.5012 19.0777 25.5012 20.9223 24.2321 21.7033L17.0482 26.1242C15.7157 26.9442 14 25.9855 14 24.4209Z"
+                    fill="#FA7C05" />
+                </svg>
+
+              </div>
+            </div>
+
+            <div class="card-desc">
+              <p>Zero to One</p>
+              <span>Peter Thiel with Blake ...</span>
+            </div>
+            </div>
+          
+          </div>
+          <div class="card">
+            <div class="card-info">
+               <div class="image">
+              <img src="./image/card-image3.png" alt="">
+              <div class="play-icon">
+                <svg width="39" height="40" viewBox="0 0 39 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="39" height="40" rx="10" fill="white" />
+                  <path
+                    d="M14 24.4209V15.5791C14 14.0145 15.7157 13.0558 17.0482 13.8758L24.2321 18.2967C25.5012 19.0777 25.5012 20.9223 24.2321 21.7033L17.0482 26.1242C15.7157 26.9442 14 25.9855 14 24.4209Z"
+                    fill="#FA7C05" />
+                </svg>
+
+              </div>
+            </div>
+
+            <div class="card-desc">
+              <p>Atemic Habits</p>
+              <span>James Clear</span>
+            </div>
+            </div>
+           
+          </div>
+          <div class="card">
+            <div class="card-info">
+                <div class="image">
+              <img src="./image/card-image4.png" alt="">
+              <div class="play-icon">
+                <svg width="39" height="40" viewBox="0 0 39 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="39" height="40" rx="10" fill="white" />
+                  <path
+                    d="M14 24.4209V15.5791C14 14.0145 15.7157 13.0558 17.0482 13.8758L24.2321 18.2967C25.5012 19.0777 25.5012 20.9223 24.2321 21.7033L17.0482 26.1242C15.7157 26.9442 14 25.9855 14 24.4209Z"
+                    fill="#FA7C05" />
+                </svg>
+
+              </div>
+            </div>
+
+            <div class="card-desc">
+              <p>Think Like Monk</p>
+              <span>Jay Shetty</span>
+            </div>
+            </div>  
+          </div>
+        </div>
+      </div>
+      <div class="midde-cards">
+        <div class="cards-title">
+          <div class="card-left">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M14 7C14 7 13.5 12 11 12.3503C11 12.3503 12.5 6.5 10.5 3.5C10.5 3.5 10.2879 6.71445 8.14499 10.5717C7.14049 12.3798 6 13.5987 6 16C6 19.4287 9.51144 21.2007 12.0057 21.2007C14.5 21.2007 18 20.0006 18 15.8005C18 13.2099 14 7 14 7Z"
+                fill="#F8991C" />
+            </svg>
+
+            <h3>Books That Might Fit To Your Taste</h3>
+
+          </div>
+          <div class="card-right">
+            <p>See All</p>
+          </div>
+        </div>
+
+        <div class="cards">
+          <div class="card">
+            <div class="card-info">
+               <div class="image">
+              <img src="./image/card-image5.png" alt="">
+              <div class="play-icon">
+                <svg width="39" height="40" viewBox="0 0 39 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="39" height="40" rx="10" fill="white" />
+                  <path
+                    d="M14 24.4209V15.5791C14 14.0145 15.7157 13.0558 17.0482 13.8758L24.2321 18.2967C25.5012 19.0777 25.5012 20.9223 24.2321 21.7033L17.0482 26.1242C15.7157 26.9442 14 25.9855 14 24.4209Z"
+                    fill="#FA7C05" />
+                </svg>
+
+              </div>
+            </div>
+
+            <div class="card-desc">
+              <p>Green Lights</p>
+              <span>Matthew McConaughey</span>
+            </div>
+            </div>
+           
+          </div>
+          <div class="card">
+            <div class="card-info">
+                <div class="image">
+              <img src="./image/card-image6.png" alt="">
+              <div class="play-icon">
+                <svg width="39" height="40" viewBox="0 0 39 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="39" height="40" rx="10" fill="white" />
+                  <path
+                    d="M14 24.4209V15.5791C14 14.0145 15.7157 13.0558 17.0482 13.8758L24.2321 18.2967C25.5012 19.0777 25.5012 20.9223 24.2321 21.7033L17.0482 26.1242C15.7157 26.9442 14 25.9855 14 24.4209Z"
+                    fill="#FA7C05" />
+                </svg>
+
+              </div>
+            </div>
+
+            <div class="card-desc">
+              <p>A Promised Land</p>
+              <span>Brak Obama</span>
+            </div>
+            </div>
+          
+          </div>
+          <div class="card">
+            <div class="card-info">
+               <div class="image">
+              <img src="./image/card-image7.png" alt="">
+              <div class="play-icon">
+                <svg width="39" height="40" viewBox="0 0 39 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="39" height="40" rx="10" fill="white" />
+                  <path
+                    d="M14 24.4209V15.5791C14 14.0145 15.7157 13.0558 17.0482 13.8758L24.2321 18.2967C25.5012 19.0777 25.5012 20.9223 24.2321 21.7033L17.0482 26.1242C15.7157 26.9442 14 25.9855 14 24.4209Z"
+                    fill="#FA7C05" />
+                </svg>
+
+              </div>
+            </div>
+
+            <div class="card-desc">
+              <p>Just AS I Am</p>
+              <span>Cicely Tyson</span>
+            </div>
+            </div>
+           
+          </div>
+          <div class="card">
+            <div class="card-info">
+               <div class="image">
+              <img src="./image/card-image8.png" alt="">
+              <div class="play-icon">
+                <svg width="39" height="40" viewBox="0 0 39 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="39" height="40" rx="10" fill="white" />
+                  <path
+                    d="M14 24.4209V15.5791C14 14.0145 15.7157 13.0558 17.0482 13.8758L24.2321 18.2967C25.5012 19.0777 25.5012 20.9223 24.2321 21.7033L17.0482 26.1242C15.7157 26.9442 14 25.9855 14 24.4209Z"
+                    fill="#FA7C05" />
+                </svg>
+
+              </div>
+            </div>
+
+            <div class="card-desc">
+              <p>Becoming</p>
+              <span>Michelle Obama </span>
+            </div> 
+            </div>
+          
+          </div>
+        </div>
+      </div>
+
+      <div class="midde-cards">
+        <div class="cards-title">
+          <div class="card-left">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path opacity="0.3" fill-rule="evenodd" clip-rule="evenodd"
+                d="M19 16H21V12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12V16H5V12C5 8.13401 8.13401 5 12 5C15.866 5 19 8.13401 19 12V16Z"
+                fill="#F8991C" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M5 14C3.89543 14 3 14.8954 3 16V19C3 20.1046 3.89543 21 5 21H6C7.10457 21 8 20.1046 8 19V16C8 14.8954 7.10457 14 6 14H5ZM18 14C16.8954 14 16 14.8954 16 16V19C16 20.1046 16.8954 21 18 21H19C20.1046 21 21 20.1046 21 19V16C21 14.8954 20.1046 14 19 14H18Z"
+                fill="#F8991C" />
+            </svg>
+            <h3>Recently Played</h3>
+
+          </div>
+          <div class="card-right bottom-box">
+            <p>See All</p>
+          </div>
+        </div>
+
+        <div class="boxs">
+          <div class="box">
+            <div class="chapter">
+              <div class="count">
+                <p>01</p>
+              </div>
+              <div class="box-desc">
+                <div class="image">
+                  <img src="./image/bottom1.png" alt="">
+                </div>
+                <div class="text">
+                  <p>Everything that remains</p>
+                  <span>Chapter 3</span>
+                </div>
+              </div>
+            </div>
+            <div class="boxs-right">
+              <div class="clock">
+                <p>12:45</p>
+              </div>
+              <div class="play">
+                <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M0 10.8447V2.00296C0 0.438316 1.71565 -0.520385 3.04819 0.29964L10.2321 4.72051C11.5012 5.50148 11.5012 7.34618 10.2321 8.12714L3.0482 12.548C1.71566 13.368 0 12.4093 0 10.8447Z"
+                    fill="#FA7C05" />
+                </svg>
+
+              </div>
+              <div class="add">
+                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="15" height="15" rx="3" fill="#A3AFCB" />
+                  <rect x="7" y="4" width="1" height="7" fill="white" />
+                  <rect x="4" y="7" width="7" height="1" fill="white" />
+                </svg>
+
+              </div>
+            </div>
+
+          </div>
+          <div class="box">
+            <div class="chapter">
+              <div class="count">
+                <p>02</p>
+              </div>
+              <div class="box-desc">
+                <div class="image">
+                  <img src="./image/bottom2.png" alt="">
+                </div>
+                <div class="text">
+                  <p>A Time for Mercy</p>
+                  <span>Last Chapter</span>
+                </div>
+              </div>
+            </div>
+            <div class="boxs-right">
+              <div class="clock">
+                <p>03:51</p>
+              </div>
+              <div class="play">
+                <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M0 10.8447V2.00296C0 0.438316 1.71565 -0.520385 3.04819 0.29964L10.2321 4.72051C11.5012 5.50148 11.5012 7.34618 10.2321 8.12714L3.0482 12.548C1.71566 13.368 0 12.4093 0 10.8447Z"
+                    fill="#FA7C05" />
+                </svg>
+
+              </div>
+              <div class="add">
+                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="15" height="15" rx="3" fill="#A3AFCB" />
+                  <rect x="7" y="4" width="1" height="7" fill="white" />
+                  <rect x="4" y="7" width="7" height="1" fill="white" />
+                </svg>
+
+              </div>
+            </div>
+
+          </div>
+          <div class="box">
+            <div class="chapter">
+              <div class="count">
+                <p>03</p>
+              </div>
+              <div class="box-desc">
+                <div class="image">
+                  <img src="./image/bottom3.png" alt="">
+                </div>
+                <div class="text">
+                  <p>Rhythm of war</p>
+                  <span>Chapter 14</span>
+                </div>
+              </div>
+            </div>
+            <div class="boxs-right">
+              <div class="clock">
+                <p>09:47</p>
+              </div>
+              <div class="play">
+                <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M0 10.8447V2.00296C0 0.438316 1.71565 -0.520385 3.04819 0.29964L10.2321 4.72051C11.5012 5.50148 11.5012 7.34618 10.2321 8.12714L3.0482 12.548C1.71566 13.368 0 12.4093 0 10.8447Z"
+                    fill="#FA7C05" />
+                </svg>
+
+              </div>
+              <div class="add">
+                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="15" height="15" rx="3" fill="#A3AFCB" />
+                  <rect x="7" y="4" width="1" height="7" fill="white" />
+                  <rect x="4" y="7" width="7" height="1" fill="white" />
+                </svg>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="container-right">
+      <div class="title">
+        <h3>Notifications</h3>
+        <div class="right-button">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="7" cy="12" r="2" fill="currentColor" />
+            <circle cx="17.1431" cy="12" r="2" fill="currentColor" />
+          </svg>
+        </div>
+
+      </div>
+
+      <div class="right-cards">
+        <div class="right-card">
+          <div class="image">
+            <img src="./image/right-foto1.png" alt="">
+          </div>
+          <div class="right-card-desc">
+            <p>Blood Heir</p>
+            <span>Purchased</span>
+          </div>
+          <div class="right-card-time">
+            <span>2 Mins</span>
+          </div>
+        </div>
+        <div class="right-card">
+          <div class="image">
+            <img src="./image/right-foto2.png" alt="">
+          </div>
+          <div class="right-card-desc">
+            <p>Light of the Jedi</p>
+            <span>Bookmarked</span>
+          </div>
+          <div class="right-card-time">
+            <span>2 Mins</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="top-authors-menu">
+        <div class="title">
+          <h3>Top Authors</h3>
+          <div class="right-button">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="7" cy="12" r="2" fill="currentColor" />
+              <circle cx="17.1431" cy="12" r="2" fill="currentColor" />
+            </svg>
+          </div>
+
+        </div>
+        <div class="authors-cards">
+          <div class="card">
+            <img src="./image/1.png" alt="">
+            <span>Peter Thiel</span>
+          </div>
+          <div class="card">
+            <img src="./image/2.png" alt="">
+            <span>Barak Obama</span>
+          </div>
+          <div class="card">
+            <img src="./image/3.png" alt="">
+            <span>Jay Shetty</span>
+          </div>
+          <div class="card">
+            <img src="./image/4.png" alt="">
+            <span>Cicely Tyson</span>
+          </div>
+          <div class="card">
+            <img src="./image/5.png" alt="">
+            <span>James Clear</span>
+          </div>
+          <div class="card">
+            <img src="./image/6.png" alt="">
+            <span>Robert Greene</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="now-playing-menu">
+        <div class="playing-card">
+          <h3>Now Playing</h3>
+          <div class="now-image">
+            <img src="./image/playing-foto.png" alt="">
+          </div>
+          <div class="player-name">
+            <p>A Promised Land</p>
+            <span>Barack Obama</span>
+          </div>
+          <div class="player-time">
+            <div class="start">
+              <p>2:30</p>
+            </div>
+            <div class="icon">
+              <svg width="131" height="11" viewBox="0 0 131 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect opacity="0.3" y="4" width="131" height="3" fill="white" />
+                <rect y="4" width="71" height="3" fill="white" />
+                <circle cx="71.5" cy="5.5" r="4.5" fill="#299393" stroke="white" stroke-width="2" />
+              </svg>
+
+
+            </div>
+            <div class="finish">
+              <p>3:45</p>
+            </div>
+          </div>
+          <div class="player-icons">
+            <div class="icons">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M10.7978 7.72144C10.4679 7.96632 9.99984 7.73082 9.99984 7.31994V6.66679H6.6665C4.82555 6.66679 3.33317 8.15917 3.33317 10.0001V10.8335C3.33317 12.2142 4.45246 13.3335 5.83317 13.3335V15.0001C3.53198 15.0001 1.6665 13.1346 1.6665 10.8335V10.0001C1.6665 7.2387 3.90508 5.00012 6.6665 5.00012H9.99984V4.10637C9.99984 3.69481 10.4693 3.45949 10.799 3.70578L12.957 5.31762C13.2253 5.51796 13.2247 5.92017 12.9558 6.1197L10.7978 7.72144Z"
+                  fill="white" />
+                <path opacity="0.3" fill-rule="evenodd" clip-rule="evenodd"
+                  d="M14.1667 5V6.66667C15.5474 6.66667 16.6667 7.78595 16.6667 9.16667V10C16.6667 11.8409 15.1743 13.3333 13.3334 13.3333H10.0486V12.4396C10.0486 12.028 9.57915 11.7927 9.24941 12.039L7.09142 13.6508C6.82319 13.8512 6.8238 14.2534 7.09262 14.4529L9.25061 16.0546C9.58054 16.2995 10.0486 16.064 10.0486 15.6532V15H13.3334C16.0948 15 18.3334 12.7614 18.3334 10V9.16667C18.3334 6.86548 16.4679 5 14.1667 5Z"
+                  fill="white" />
+              </svg>
+
+
+            </div>
+            <div class="icons">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M15 15.4365C15 15.5913 14.8178 15.6742 14.7011 15.5724L8.48868 10.1536C8.40644 10.0819 8.40624 9.95413 8.48825 9.88214L14.7007 4.42921C14.8172 4.3269 15 4.40967 15 4.56476V15.4365Z"
+                  fill="white" />
+                <rect opacity="0.3" x="5" y="5" width="2.5" height="10" rx="0.360731" fill="white" />
+              </svg>
+            </div>
+            <div class="icons">
+              <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M9.11073 7.5C8.9115 7.5 8.75 7.6615 8.75 7.86073V22.1393C8.75 22.3385 8.9115 22.5 9.11073 22.5H13.3893C13.5885 22.5 13.75 22.3385 13.75 22.1393V7.86073C13.75 7.6615 13.5885 7.5 13.3893 7.5H9.11073ZM16.6107 7.50001C16.4115 7.50001 16.25 7.66151 16.25 7.86074V22.1393C16.25 22.3385 16.4115 22.5 16.6107 22.5H20.8893C21.0885 22.5 21.25 22.3385 21.25 22.1393V7.86074C21.25 7.66151 21.0885 7.50001 20.8893 7.50001H16.6107Z"
+                  fill="white" />
+              </svg>
+            </div>
+            <div class="icons"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M5 15.4365C5 15.5913 5.18224 15.6742 5.29892 15.5724L11.5113 10.1536C11.5936 10.0819 11.5938 9.95413 11.5117 9.88214L5.29935 4.42921C5.18279 4.3269 5 4.40967 5 4.56476V15.4365Z"
+                  fill="white" />
+                <rect opacity="0.3" width="2.5" height="10" rx="0.360731" transform="matrix(-1 0 0 1 15 5)"
+                  fill="white" />
+              </svg>
+            </div>
+            <div class="icons"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path opacity="0.3" fill-rule="evenodd" clip-rule="evenodd"
+                  d="M13.1564 16.2826C13.306 16.5936 13.6795 16.7245 13.9905 16.5749C16.4967 15.3693 18.1249 12.8314 18.1249 10.0005C18.1249 7.19672 16.5278 4.67898 14.0585 3.4593C13.7491 3.30644 13.3743 3.4334 13.2214 3.74288C13.0685 4.05237 13.1955 4.42717 13.505 4.58004C15.5517 5.59102 16.8749 7.67693 16.8749 10.0005C16.8749 12.3465 15.5259 14.4492 13.4487 15.4484C13.1376 15.598 13.0067 15.9715 13.1564 16.2826ZM12.7456 13.2169C12.9141 13.5182 13.2949 13.6258 13.5962 13.4573C14.8384 12.7627 15.6249 11.4503 15.6249 10.0005C15.6249 8.56148 14.85 7.25723 13.6223 6.55843C13.3223 6.38767 12.9407 6.49243 12.77 6.79241C12.5992 7.0924 12.704 7.47401 13.004 7.64476C13.845 8.12349 14.3749 9.01538 14.3749 10.0005C14.3749 10.993 13.837 11.8905 12.9861 12.3663C12.6848 12.5348 12.5772 12.9156 12.7456 13.2169Z"
+                  fill="white" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M9.99984 3.37122C9.99984 3.04984 9.61128 2.8889 9.38403 3.11614L5.83317 6.667H2.38797C1.98951 6.667 1.6665 6.99001 1.6665 7.38846V12.6122C1.6665 13.0107 1.98951 13.3337 2.38797 13.3337H5.83317L9.38403 16.8845C9.61128 17.1118 9.99984 16.9508 9.99984 16.6295V3.37122Z"
+                  fill="white" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,375 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background: rgb(23, 23, 23);
+  min-height: 100vh;
+}
+
+.container {
+  width: 90%;
+  margin: 40px auto;
+}
+.container section {
+  width: 100%;
+}
+.container section .card-top {
+  width: 100%;
+  border-radius: 20px;
+  position: relative;
+}
+.container section .card-top img {
+  width: 100%;
+  height: 380px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px;
+  display: block;
+}
+.container section .card-top .top-card-desc {
+  position: absolute;
+  top: 80px;
+  left: 80px;
+  color: rgb(255, 255, 255);
+  max-width: 450px;
+}
+.container section .card-top .card-title {
+  color: rgb(247, 213, 50);
+  font-size: 36px;
+  font-weight: 600;
+  font-family: "Fira", sans-serif;
+}
+.container section .card-top h2 {
+  font-size: 42px;
+  margin: 0 0 15px 0;
+  font-weight: 600;
+}
+.container section .card-top .desc {
+  font-size: 18px;
+  font-family: "Futura", sans-serif;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+}
+.container section .price-wrapper {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  border-radius: 50px;
+  overflow: hidden;
+  bottom: 30px;
+  left: 80px;
+  background: linear-gradient(to bottom, #2b1f1a, #3a2a24);
+}
+.container section .price {
+  padding: 12px 28px;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  font-size: 18px;
+}
+.container .preorder {
+  padding: 13px 25px;
+  border: none;
+  background: rgb(246, 206, 14);
+  color: black;
+  font-family: "Futura", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+.container .all-news-content {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .all-news {
+  display: flex;
+  align-items: baseline;
+  gap: 15px;
+}
+.container .all-news .all-news-title {
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  font-family: "Oswald", sans-serif;
+  font-size: 32px;
+  padding-left: 20px;
+}
+.container .all-news .count {
+  font-family: "Futura", sans-serif;
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  padding-left: 20px;
+  margin-bottom: -5px;
+}
+.container .search-area {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+.container .search-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgb(48, 48, 48);
+  padding: 10px 15px;
+  border-radius: 9px;
+  cursor: pointer;
+}
+.container .search-box i {
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+}
+.container .search-box input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  width: 200px;
+  cursor: pointer;
+}
+.container .menu-box {
+  background: rgb(48, 48, 48);
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+}
+.container main {
+  width: 100%;
+  margin-top: 30px;
+}
+.container main .cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 26px;
+  justify-content: flex-start;
+}
+.container main .cards .card {
+  border-radius: 15px;
+  background-color: rgb(48, 48, 48);
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+}
+.container main .cards .card .card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 100%;
+  width: 95%;
+}
+.container main .cards .card .card-info .card-top-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+.container main .cards .card .card-info img {
+  width: 100%;
+  height: 190px;
+  border-radius: 12px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.container main .cards .card .card-profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+.container main .cards .card .card-profile .profil {
+  border-radius: 50%;
+}
+.container main .cards .card .card-profile .profil img {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+}
+.container main .cards .card .card-profile .profile-desc {
+  font-family: "Fira", sans-serif;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+  font-size: 19px;
+  gap: 15px;
+}
+.container main .cards .card .card-profile .profile-desc .title {
+  font-size: 19px;
+  font-weight: 600;
+  color: rgb(247, 213, 50);
+}
+.container main .cards .card .card-content {
+  font-size: 14px;
+  line-height: 1.4;
+  color: rgb(183, 183, 183);
+  font-family: "Futura", sans-serif;
+  margin-top: 10px;
+}
+.container main .cards .card .card-state {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+  margin-bottom: 7px;
+  margin-top: 7px;
+}
+.container main .cards .card .popular {
+  padding: 5px 15px;
+  background-color: rgb(255, 206, 115);
+  border-radius: 30px;
+  font-size: 12px;
+  font-weight: 500;
+  font-family: "Futura", sans-serif;
+  color: rgb(0, 0, 0);
+}
+.container main .cards .card .star,
+.container main .cards .card .send,
+.container main .cards .card .shape {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.container main .cards .card .star i,
+.container main .cards .card .send i,
+.container main .cards .card .shape i {
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+}
+.container main .cards .card .number {
+  font-family: "Futura", sans-serif;
+  font-size: 12px;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+}/*# sourceMappingURL=style.css.map */

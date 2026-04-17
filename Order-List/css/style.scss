@@ -1,0 +1,420 @@
+@use "reset";
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  background: linear-gradient(180deg, #31363a 0%, #13171a 100%);
+}
+.container {
+  width: 940px;
+  display: flex;
+  flex-direction: column;
+  margin: 30px auto;
+  overflow-x: auto;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  .search-box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    input {
+      width: 250px;
+      padding: 15px 15px 15px 45px;
+      background-color: rgba(66, 71, 74, 1);
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      color: rgba(212, 215, 220, 1);
+      outline: none;
+    }
+
+    .search-btn {
+      position: absolute;
+      left: 15px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: rgba(212, 215, 220, 1);
+      cursor: pointer;
+    }
+  }
+}
+.admin-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  gap: 30px;
+
+  .person-icon {
+    color: white;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+
+    .person-info {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+      background-color: rgba(196, 196, 196, 1);
+
+      p {
+        font-family: "Roboto", sans-serif;
+        font-weight: 600;
+        color: rgba(255, 255, 255, 1);
+      }
+    }
+    .person-name {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+      color: rgba(196, 196, 196, 1);
+      font-size: 15px;
+      font-family: "Roboto", sans-serif;
+      cursor: pointer;
+
+      i {
+        font-size: 12px;
+        cursor: pointer;
+        color: rgba(196, 196, 196, 1);
+      }
+    }
+  }
+  .state {
+    i {
+      cursor: pointer;
+      color: rgba(196, 196, 196, 1);
+    }
+  }
+}
+section {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 30px;
+
+  .order-list-title {
+    color: rgba(243, 243, 243, 1);
+    font-weight: 600;
+    font-size: 21px;
+    margin-bottom: 15px;
+  }
+
+  .boxs {
+    width: 100%;
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    flex-wrap: nowrap;
+
+    .box {
+      width: 105px;
+      color: rgba(255, 255, 255, 1);
+      display: flex;
+      border-radius: 10px;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      height: 50px;
+      box-sizing: border-box;
+      min-width: 105px;
+
+      i {
+        font-size: 15px;
+        color: rgba(255, 255, 255, 1);
+      }
+
+      p {
+        font-family: "Roboto", sans-serif;
+        font-size: 15px;
+        color: rgba(255, 255, 255, 1);
+      }
+    }
+    .accepted {
+      background: linear-gradient(90.34deg, #ffa113 8.21%, #f4350a 60.11%);
+      background-blend-mode: darken;
+    }
+    .rejected {
+      background: linear-gradient(90.34deg, #5a5752 8.21%, #89807e 60.11%);
+      background-blend-mode: darken;
+      p {
+        color: rgba(156, 146, 146, 1);
+      }
+    }
+    .true {
+      background: linear-gradient(180deg, #d2df3d 0%, #959d3e 100%);
+      background-blend-mode: darken;
+      text-align: center;
+
+      p {
+        color: rgba(255, 255, 255, 1);
+      }
+    }
+    .orange {
+      background: linear-gradient(180deg, #dfa83d 0%, #8d7840 100%);
+      background-blend-mode: darken;
+    }
+  }
+  .boxs::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+main {
+  width: 100%;
+  margin-top: 40px;
+
+  .cards {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 20px;
+
+    .card {
+      background: linear-gradient(
+        183.65deg,
+        #212429 3%,
+        rgba(108, 112, 118, 0) 107%
+      );
+      border-radius: 15px;
+      padding: 20px;
+      border: 1px solid #2f3237;
+      display: flex;
+      flex-direction: column;
+      box-shadow:
+        0px 4px 4px 0px rgba(0, 0, 0, 0.25),
+        inset 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+
+    .card-info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 20px;
+    }
+
+    .card-title {
+      h2 {
+        font-size: 17px;
+        color: rgba(212, 215, 220, 1);
+        font-weight: 600;
+
+        span {
+          padding-left: 9px;
+        }
+      }
+
+      p {
+        font-size: 14px;
+        color: rgba(136, 136, 136, 1);
+      }
+    }
+
+    .red {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: rgba(190, 40, 40, 1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 600;
+      color: white;
+      p {
+        font-size: 24px;
+        color: rgba(255, 255, 255, 1);
+      }
+    }
+    .purple {
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      background: rgba(177, 72, 167, 1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 600;
+      color: white;
+
+      p {
+        font-size: 24px;
+        color: rgba(255, 255, 255, 1);
+      }
+    }
+    .green {
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      background: rgba(21, 157, 59, 1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 600;
+      color: white;
+
+      p {
+        font-size: 24px;
+        color: rgba(255, 255, 255, 1);
+      }
+    }
+
+    .card-menu {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid rgba(65, 68, 72, 1);
+    }
+
+    .food {
+      display: flex;
+      gap: 15px;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .food-image {
+      box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+      border-radius: 100%;
+
+      img {
+        width: 82px;
+        height: 82px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+    }
+
+    .food-info {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      width: 70%;
+    }
+
+    .food-title h2 {
+      font-size: 16px;
+      color: rgba(212, 215, 220, 1);
+    }
+
+    .food-title p {
+      font-size: 12px;
+      color: rgba(136, 136, 136, 1);
+    }
+
+    .food-price {
+      display: flex;
+      justify-content: space-between;
+      font-size: 12px;
+      color: rgba(255, 255, 255, 1);
+    }
+
+    .order-info {
+      border-top: 1px solid #2f3237;
+      padding-top: 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: auto;
+    }
+
+    .order-price {
+      display: flex;
+      flex-direction: column;
+
+      p {
+        font-size: 12px;
+        color: rgba(136, 136, 136, 1);
+        margin-bottom: 5px;
+      }
+
+      span {
+        font-size: 12px;
+        font-weight: 600;
+        color: rgba(255, 255, 255, 1);
+      }
+    }
+
+    .order-state {
+      display: flex;
+      gap: 10px;
+    }
+
+    .tik,
+    .not-tik {
+      width: 45px;
+      height: 35px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+    .state-completed {
+      background: linear-gradient(90.34deg, #ffa113 8.21%, #f4350a 60.11%);
+      background-blend-mode: darken;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 130px;
+      height: 40px;
+      border-radius: 10px;
+      gap: 9px;
+      cursor: pointer;
+
+      p {
+        font-size: 13px;
+        color: rgba(255, 255, 255, 1);
+      }
+      i {
+        color: rgba(255, 255, 255, 1);
+      }
+    }
+    .state-rejected {
+      background: linear-gradient(90.34deg, #5a5752 8.21%, #89807e 60.11%);
+      background-blend-mode: darken;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 130px;
+      height: 40px;
+      border-radius: 10px;
+      gap: 9px;
+      cursor: pointer;
+
+      p {
+        font-size: 13px;
+        color: rgba(156, 146, 146, 1);
+      }
+      i {
+        color: rgba(156, 146, 146, 1);
+      }
+    }
+
+    .tik {
+      background: linear-gradient(90deg, #ffa113, #f4350a);
+      color: rgba(255, 255, 255, 1);
+    }
+
+    .not-tik {
+      background: linear-gradient(90deg, #5a5752, #89807e);
+      color: rgba(156, 146, 146, 1);
+    }
+  }
+}
