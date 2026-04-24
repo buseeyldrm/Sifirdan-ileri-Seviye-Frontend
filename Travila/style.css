@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+}
+.primary-color {
+  color: rgba(0, 0, 0, 1);
+}
+.secondary-color {
+  color: rgba(115, 115, 115, 1);
+}
+.navbar-list {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 22px;
+  cursor: pointer;
+}
+.button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+  cursor: pointer;
+}
+.h1-text {
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 66px;
+}
+.text {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+}
+.box-list {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+.search-button-text {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  font-style: bold;
+}
+.span-text {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 22px;
+}
+.h3-title {
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 48px;
+}
+.foto-title {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 22px;
+}
+.foto-desc {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+}
+.boxs {
+  background-color: rgba(228, 230, 232, 1);
+  border-radius: 50px;
+  border: 1px solid rgba(228, 230, 232, 1);
+  cursor: pointer;
+}
+.boxs-p {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+.heart-button {
+  width: 32px;
+  height: 32px;
+  background-color: rgba(228, 230, 232, 1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.heart-button:hover {
+  background-color: rgba(255, 0, 0, 1);
+  color: white;
+}
+.box-title {
+  font-size: 17px;
+  font-weight: 800;
+  line-height: 32px;
+}
