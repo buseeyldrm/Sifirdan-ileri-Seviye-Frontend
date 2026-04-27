@@ -1,3 +1,3 @@
-![](image/elder1.pg)
-![](image/elder2.pg)
-![](image/elder3.pg)
+![](image/elder1.png)
+![](image/elder2.png)
+![](image/elder3.png)
