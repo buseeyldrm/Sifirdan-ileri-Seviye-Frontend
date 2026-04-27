@@ -1,4 +1,4 @@
-![](image/grabit1.png)
-![](image/grabit2.png)
-![](image/grabit3.png)
-![](image/grabit4.png)
+![](img/grabit1.png)
+![](img/grabit2.png)
+![](img/grabit3.png)
+![](img/grabit4.png)
